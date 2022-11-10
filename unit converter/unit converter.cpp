@@ -9,38 +9,38 @@ int main()
 	std::cout << "\n1. KM to Miles.\n2. M to Ft. \n3. CM to In.\n";
 	string unit;
 	std::cin >> unit;
-	
-	
-	if(unit == "1")
-		{
+
+
+	if (unit == "1")
+	{
 		std::cout << "How many KM would you like to convert?\n";
-			double km;
-			std::cin >> km;
-			double miles = km * 0.621371;
-			std::cout << km << "KM is " << miles << "Miles.\n";
-			return 0;
-		}
+		double km;
+		std::cin >> km;
+		double miles = km * 0.621371;
+		std::cout << km << "KM is " << miles << "Miles.\n";
+		return 0;
+	}
 
 	/* this if statement takes an input for string unit (which selects the type of unit the user would like to convert.
 		Then it takes an input for the amount of units the user would like to convert. Then it multiplies the input by the conversion
 		ratio and outputs the result.*/
-	
+
 	else if (unit == "2")
-		{
+	{
 		std::cout << "How many M would you like to convert?\n";
-			double m;
+		double m;
 		std::cin >> m;
 		double ft = m * 3.28084;
 		std::cout << m << "M is " << ft << "Ft.\n";
 		return 0;
-		}
+	}
 
 	/* this if statement takes an input for string unit (which selects the type of unit the user would like to convert.
 	* Then it takes an input for the amount of units the user would like to convert. Then it multiplies the input by the conversion
 	* ratio and outputs the result */
 
 	else if (unit == "3")
-		{
+	{
 		std::cout << "How many CM would you like to convert?\n";
 		double cm;
 		std::cin >> cm;
@@ -48,28 +48,28 @@ int main()
 		std::cout << cm << "CM is " << in << "In.\n";
 		return 0;
 		//
-		}
+	}
 	//this one does the same for centimeters to inches. (gonna try getting that to show up as a fraction but I don't know how i would go about doing that.
 
 	else
-		{
+	{
 		std::cout << "Invalid input.\n";
 		return 1;
 		//this is just in case the user inputs something other than 1, 2, or 3. returns 1 so kernel knows something failed and kills task.
-		}
+	}
 
-		//didnt work VV
-		//double miles;
-		//double kiloMeter;
-		//std::cout << "How many KM would you like to convert?";
-		//std::cin >> kiloMeter;
-		//miles = kiloMeter * 0.621371;
-		//std::cout << kiloMeter << "KM is " << miles << "Miles.";
-		//break;
+	//didnt work VV
+	//double miles;
+	//double kiloMeter;
+	//std::cout << "How many KM would you like to convert?";
+	//std::cin >> kiloMeter;
+	//miles = kiloMeter * 0.621371;
+	//std::cout << kiloMeter << "KM is " << miles << "Miles.";
+	//break;
 
-	//why won't this run?
-	//
-		
+//why won't this run?
+//
+
 	return 2;
 }
 
